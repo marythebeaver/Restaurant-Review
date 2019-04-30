@@ -121,7 +121,7 @@ nav h1 a {
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial,sans-serif;
-  font-size: 15pt;
+  font-size: 11pt;
   height: 35px;
   letter-spacing: 0;
   margin: 10px;
@@ -288,4 +288,23 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+@media only screen and (max-width: 443px) {
+	.filter-options {
+		height: 100px;
+	}
+}
+
+@media only screen and (max-width: 353px) {
+	#restaurants-list li {
+	  width: 90%;
+		min-width: 0px;
+	}
+	#restaurants-list li a {
+		width: 50%;
+		font-size: 10pt;
+		word-wrap: break-word;
+		padding: 8px 10px 10px;
+	}
 }
