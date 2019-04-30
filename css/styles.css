@@ -290,6 +290,8 @@ nav h1 a {
   color: #666;
 }
 
+/* ====================== Main Page Media Query ====================== */
+
 @media only screen and (max-width: 443px) {
 	.filter-options {
 		height: 100px;
@@ -306,5 +308,54 @@ nav h1 a {
 		font-size: 10pt;
 		word-wrap: break-word;
 		padding: 8px 10px 10px;
+	}
+}
+
+/* ====================== Restaurant Details Media Query ====================== */
+
+@media only screen and (max-width: 683px) {
+	.inside #map-container {
+	  width: 100%;
+		height: 50%;
+		top: 130px;
+	}
+
+	#breadcrumb {
+    width: 100%;
+	}
+
+	#restaurant-container, #reviews-container {
+	  width: 100%;
+	}
+
+	#restaurant-container {
+		padding-top: 600px;
+	}
+
+	#reviews-list li {
+    position: static;
+	}
+
+}
+
+@media only screen and (max-width: 420px) {
+	.inside #map-container {
+		height: 30%;
+	}
+
+	#restaurant-container {
+		padding-top: 410px;
+	}
+}
+
+@media only screen and (max-width: 319px) {
+	#restaurant-container {
+		padding-top: 600px;
+	}
+}
+
+@media only screen and (max-width: 92px) {
+	#restaurant-container {
+		padding-top: 1000px;
 	}
 }
