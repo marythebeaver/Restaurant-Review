@@ -322,6 +322,7 @@ nav h1 a {
 
 	#breadcrumb {
     width: 100%;
+		text-align: center;
 	}
 
 	#restaurant-container, #reviews-container {
@@ -335,7 +336,14 @@ nav h1 a {
 	#reviews-list li {
     position: static;
 	}
-
+	#footer{
+	  padding-left: 0;
+		padding-right: 0;
+	}
+	#breadcrumb {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 @media only screen and (max-width: 420px) {
