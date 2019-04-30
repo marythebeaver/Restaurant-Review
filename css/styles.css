@@ -192,6 +192,13 @@ nav h1 a {
 
 
 /* ====================== Restaurant Details ====================== */
+.inside #maincontent {
+  background-color: #f3f3f3;
+  min-height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .inside header {
   position: fixed;
   top: 0;
