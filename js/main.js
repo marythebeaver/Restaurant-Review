@@ -5,6 +5,20 @@ var newMap
 var markers = []
 
 /**
+* Register service worker
+*/
+if ('serviceWorker' in navigator) {
+	window.addEventListener('load', function() {
+	navigator.serviceWorker.register('/sw.js').then(function(registration) {
+		console.log('ServiceWorker successfully registrated , scope: ', registration.scope);
+	}).catch(function(err) {
+		console.log('ServiceWorker registration failed!');
+	});
+	});
+}
+
+
+/**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -88,6 +102,7 @@ initMap = () => {
 
   updateRestaurants();
 }
+
 /* window.initMap = () => {
   let loc = {
     lat: 40.722216,
